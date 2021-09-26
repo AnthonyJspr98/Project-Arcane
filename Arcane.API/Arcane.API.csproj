@@ -5,6 +5,39 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20210917091756_init.cs" />
+    <Compile Remove="Migrations\20210917091756_init.Designer.cs" />
+    <Compile Remove="Migrations\20210918072334_dataAnot.cs" />
+    <Compile Remove="Migrations\20210918072334_dataAnot.Designer.cs" />
+    <Compile Remove="Migrations\20210918072632_dataAnott.cs" />
+    <Compile Remove="Migrations\20210918072632_dataAnott.Designer.cs" />
+    <Compile Remove="Migrations\20210918073820_fluentValidation.cs" />
+    <Compile Remove="Migrations\20210918073820_fluentValidation.Designer.cs" />
+    <Compile Remove="Migrations\20210918074138_init.cs" />
+    <Compile Remove="Migrations\20210918074138_init.Designer.cs" />
+    <Compile Remove="Migrations\20210918074306_test.cs" />
+    <Compile Remove="Migrations\20210918074306_test.Designer.cs" />
+    <Compile Remove="Migrations\20210918074600_init.cs" />
+    <Compile Remove="Migrations\20210918074600_init.Designer.cs" />
+    <Compile Remove="Migrations\20210918074723_init.cs" />
+    <Compile Remove="Migrations\20210918074723_init.Designer.cs" />
+    <Compile Remove="Migrations\20210918074832_initt.cs" />
+    <Compile Remove="Migrations\20210918074832_initt.Designer.cs" />
+    <Compile Remove="Migrations\20210918120659_init.cs" />
+    <Compile Remove="Migrations\20210918120659_init.Designer.cs" />
+    <Compile Remove="Migrations\20210918121013_initt.cs" />
+    <Compile Remove="Migrations\20210918121013_initt.Designer.cs" />
+    <Compile Remove="Migrations\20210918121121_inittt.cs" />
+    <Compile Remove="Migrations\20210918121121_inittt.Designer.cs" />
+    <Compile Remove="Migrations\20210918121217_initttTest.cs" />
+    <Compile Remove="Migrations\20210918121217_initttTest.Designer.cs" />
+    <Compile Remove="Migrations\20210918121405_initttTestt.cs" />
+    <Compile Remove="Migrations\20210918121405_initttTestt.Designer.cs" />
+    <Compile Remove="Migrations\20210918121511_initttTesttTE.cs" />
+    <Compile Remove="Migrations\20210918121511_initttTesttTE.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
@@ -13,6 +46,11 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 

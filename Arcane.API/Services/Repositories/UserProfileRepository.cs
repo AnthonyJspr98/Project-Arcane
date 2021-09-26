@@ -14,8 +14,9 @@ namespace Arcane.API.Services.Repositories
         public UserProfileRepository(UserProfileDbContext dbContext)
         {
             _dbContext = dbContext;
-        }
-        public async Task<List<UserProfile>> GetAllUserProfile()
+        } 
+
+        public async Task<List<UserProfile>> GetAllUserProfileAsync()
         {
             return await _dbContext.UserProfiles.ToListAsync();
         }

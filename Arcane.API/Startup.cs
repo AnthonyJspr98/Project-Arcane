@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Arcane.API.Data;
+using Arcane.API.Services.Interfaces;
+using Arcane.API.Services.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,8 +30,10 @@ namespace Arcane.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<UserProfileDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("UserProfileConStr")));
-           
+          
             services.AddControllers();
+
+            services.AddTransient<IUserProfileRepository, UserProfileRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

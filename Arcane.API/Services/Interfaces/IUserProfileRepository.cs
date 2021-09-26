@@ -8,7 +8,7 @@ namespace Arcane.API.Services.Interfaces
 {
     public interface IUserProfileRepository
     {
-
-        Task<List<UserProfile>> GetAllUserProfile();
+        Task<List<UserProfile>> GetAllUserProfileAsync();
+        
     }
 }
